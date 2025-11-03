@@ -1,7 +1,7 @@
 'use client'
 
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { FiSun, FiMoon, FiMenu, FiX } from 'react-icons/fi'
 import { useTheme } from '@/components/ThemeProvider'
 

@@ -42,7 +42,7 @@ export default function Contact() {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Ready to bring your ideas to life? Let's collaborate and create something amazing together.
+            Ready to bring your ideas to life? Let&apos;s collaborate and create something amazing together.
           </motion.p>
 
           <motion.div
@@ -75,9 +75,9 @@ export default function Contact() {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-            <h3 className="text-2xl font-bold text-white mb-4">Let's Work Together</h3>
+            <h3 className="text-2xl font-bold text-white mb-4">Let&apos;s Work Together</h3>
             <p className="text-zinc-400 mb-6">
-              I'm always open to discussing new opportunities and interesting projects.
+              I&apos;m always open to discussing new opportunities and interesting projects.
             </p>
             <motion.a
               href={`mailto:${personalInfo.email}`}

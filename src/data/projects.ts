@@ -16,7 +16,7 @@ export const projects: Project[] = [
     description: "Discover geographic location of any IP address with real-time data visualization, interactive maps, and detailed network information.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
     liveUrl: "https://ipgeo.revy.my.id",
-    thumbnail: "http://10.130.157.188:3000/thum/ipgeo.png",
+    thumbnail: "https://revy.my.id/thum/ipgeo.png",
     githubUrl: "https://github.com/alexjohnson/ecommerce-platform",
     featured: true
   }

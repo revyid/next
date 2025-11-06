@@ -31,7 +31,7 @@ export default function Hero() {
   }
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-gray-50 to-white dark:from-gray-950 dark:to-black">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-gray-950 to-black">
       <motion.div 
         className="absolute inset-0 opacity-30"
         animate={{
@@ -59,7 +59,7 @@ export default function Hero() {
           {particlePositions.map((particle, i) => (
             <motion.div
               key={i}
-              className="absolute w-1 h-1 bg-black dark:bg-white rounded-full"
+              className="absolute w-1 h-1 bg-white rounded-full"
               style={{
                 left: `${particle.left}%`,
                 top: `${particle.top}%`,
@@ -125,7 +125,7 @@ export default function Hero() {
             </motion.h1>
 
             <motion.p
-              className="text-xl md:text-3xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed"
+              className="text-xl md:text-3xl text-gray-400 max-w-3xl mx-auto leading-relaxed"
               initial={{ opacity: 0, y: 30, filter: "blur(10px)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
               transition={{ duration: 1, delay: 1.2 }}
@@ -157,7 +157,7 @@ export default function Hero() {
               {personalInfo.skills.slice(0, 6).map((skill, index) => (
                 <motion.span
                   key={skill}
-                  className="px-6 py-3 bg-white/10 dark:bg-black/20 backdrop-blur-sm text-gray-700 dark:text-gray-300 rounded-full border border-gray-200/50 dark:border-gray-700/50 font-medium"
+                  className="px-6 py-3 bg-black/20 backdrop-blur-sm text-gray-300 rounded-full border border-gray-700/50 font-medium"
                   initial={{ opacity: 0, scale: 0, rotate: -180 }}
                   animate={{ opacity: 1, scale: 1, rotate: 0 }}
                   transition={{ 
@@ -169,8 +169,8 @@ export default function Hero() {
                   whileHover={{ 
                     scale: 1.1, 
                     y: -5,
-                    boxShadow: "0 10px 25px rgba(0,0,0,0.2)",
-                    borderColor: 'rgba(0, 0, 0, 0.3)',
+                    boxShadow: "0 10px 25px rgba(255,255,255,0.1)",
+                    borderColor: 'rgba(255, 255, 255, 0.3)',
                     transition: { duration: 0.2 }
                   }}
                   whileTap={{ scale: 0.95 }}
@@ -188,13 +188,13 @@ export default function Hero() {
 
           <motion.button
             onClick={scrollToAbout}
-            className="absolute bottom left-1/2 transform -translate-x-1/2 translate-y-1/2 p-4 rounded-full bg-white/10 dark:bg-black/20 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50"
+            className="absolute bottom left-1/2 transform -translate-x-1/2 translate-y-1/2 p-4 rounded-full bg-black/20 backdrop-blur-sm border border-gray-700/50"
             animate={{ 
               y: [0, -10, 0],
               boxShadow: [
-                "0 0 0 0 rgba(0, 0, 0, 0.1)",
-                "0 0 0 10px rgba(0, 0, 0, 0.05)",
-                "0 0 0 0 rgba(0, 0, 0, 0.1)"
+                "0 0 0 0 rgba(255, 255, 255, 0.1)",
+                "0 0 0 10px rgba(255, 255, 255, 0.05)",
+                "0 0 0 0 rgba(255, 255, 255, 0.1)"
               ]
             }}
             transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
@@ -209,7 +209,7 @@ export default function Hero() {
               animate={{ rotate: 360 }}
               transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
             >
-              <FiArrowDown className="w-6 h-6 text-gray-600 dark:text-gray-400" />
+              <FiArrowDown className="w-6 h-6 text-gray-400" />
             </motion.div>
           </motion.button>
         </div>

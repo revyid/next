@@ -15,7 +15,7 @@ export default function Footer() {
   }
 
   return (
-    <footer className="bg-zinc-900/50 backdrop-blur-sm border-t border-zinc-800/50">
+    <footer className="bg-gray-950/50 backdrop-blur-sm border-t border-gray-800/50">
       <div className="container mx-auto px-6 py-12">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
@@ -23,12 +23,12 @@ export default function Footer() {
               className="flex items-center space-x-2 mb-4"
               whileHover={{ scale: 1.05 }}
             >
-              <div className="w-8 h-8 bg-gradient-to-br from-white to-zinc-400 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-gradient-to-br from-white to-gray-400 rounded-lg flex items-center justify-center">
                 <div className="w-4 h-4 bg-black rounded-sm"></div>
               </div>
               <span className="text-xl font-bold text-gradient">Portfolio</span>
             </motion.div>
-            <p className="text-zinc-400 text-sm">
+            <p className="text-gray-400 text-sm">
               Crafting digital experiences with modern web technologies.
             </p>
           </div>
@@ -40,7 +40,7 @@ export default function Footer() {
                 <motion.button
                   key={item}
                   onClick={() => scrollToSection(item)}
-                  className="block text-zinc-400 hover:text-white transition-colors text-sm"
+                  className="block text-gray-400 hover:text-white transition-colors text-sm"
                   whileHover={{ x: 5 }}
                 >
                   {item}
@@ -51,7 +51,7 @@ export default function Footer() {
 
           <div>
             <h3 className="text-white font-semibold mb-4">Contact Info</h3>
-            <div className="space-y-2 text-sm text-zinc-400">
+            <div className="space-y-2 text-sm text-gray-400">
               <p>{personalInfo.email}</p>
               <p>{personalInfo.phone}</p>
               <p>{personalInfo.location}</p>
@@ -59,10 +59,10 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-zinc-800/50 pt-8">
+        <div className="border-t border-gray-800/50 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <motion.p 
-              className="text-zinc-400 text-sm flex items-center space-x-2"
+              className="text-gray-400 text-sm flex items-center space-x-2"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
@@ -78,7 +78,7 @@ export default function Footer() {
             </motion.p>
 
             <motion.p 
-              className="text-zinc-500 text-xs mt-2 md:mt-0"
+              className="text-gray-500 text-xs mt-2 md:mt-0"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.7 }}

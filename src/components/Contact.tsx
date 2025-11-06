@@ -37,7 +37,7 @@ export default function Contact() {
           </motion.h2>
 
           <motion.p
-            className="text-xl text-zinc-400 mb-12 max-w-2xl mx-auto"
+            className="text-xl text-gray-400 mb-12 max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -57,31 +57,31 @@ export default function Contact() {
                 href={social.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-14 h-14 bg-zinc-900/50 backdrop-blur-sm rounded-xl border border-zinc-800/50 hover:border-zinc-700/50 flex items-center justify-center transition-all duration-300 group"
+                className="w-14 h-14 bg-gray-900/50 backdrop-blur-sm rounded-xl border border-gray-800/50 hover:border-gray-700/50 flex items-center justify-center transition-all duration-300 group"
                 whileHover={{ y: -5, scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
               >
-                <social.icon className="w-6 h-6 text-zinc-400 group-hover:text-white transition-colors" />
+                <social.icon className="w-6 h-6 text-gray-400 group-hover:text-white transition-colors" />
               </motion.a>
             ))}
           </motion.div>
 
           <motion.div
-            className="bg-zinc-900/30 backdrop-blur-sm p-8 rounded-2xl border border-zinc-800/50"
+            className="bg-gray-900/30 backdrop-blur-sm p-8 rounded-2xl border border-gray-800/50"
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
             <h3 className="text-2xl font-bold text-white mb-4">Let&apos;s Work Together</h3>
-            <p className="text-zinc-400 mb-6">
+            <p className="text-gray-400 mb-6">
               I&apos;m always open to discussing new opportunities and interesting projects.
             </p>
             <motion.a
               href={`mailto:${personalInfo.email}`}
-              className="inline-flex items-center space-x-2 bg-white text-black px-8 py-3 rounded-xl font-semibold hover:bg-zinc-200 transition-colors"
+              className="inline-flex items-center space-x-2 bg-white text-black px-8 py-3 rounded-xl font-semibold hover:bg-gray-200 transition-colors"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

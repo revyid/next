@@ -8,8 +8,8 @@ import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white dark:bg-black text-black dark:text-white transition-colors duration-500">
-      <div className="bg-gradient-to-b from-white via-gray-50 to-gray-100 dark:from-black dark:via-gray-950 dark:to-gray-900 transition-colors duration-500">
+    <main className="min-h-screen bg-black text-white">
+      <div className="bg-gradient-to-b from-black via-gray-950 to-gray-900">
         <Header />
         <Hero />
         <About />

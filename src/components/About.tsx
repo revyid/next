@@ -10,14 +10,14 @@ export default function About() {
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
   return (
-    <section id="about" className="py-32 bg-gradient-to-b from-white via-gray-50 to-gray-100 dark:from-black dark:via-gray-950 dark:to-gray-950 relative overflow-hidden">
+    <section id="about" className="py-32 bg-gradient-to-b from-black via-gray-950 to-gray-950 relative overflow-hidden">
       <motion.div 
         className="absolute inset-0 opacity-20"
         animate={{
           background: [
-            "linear-gradient(45deg, transparent 30%, rgba(0,0,0,0.05) 50%, transparent 70%)",
-            "linear-gradient(225deg, transparent 30%, rgba(0,0,0,0.05) 50%, transparent 70%)",
-            "linear-gradient(45deg, transparent 30%, rgba(0,0,0,0.05) 50%, transparent 70%)"
+            "linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.05) 50%, transparent 70%)",
+            "linear-gradient(225deg, transparent 30%, rgba(255,255,255,0.05) 50%, transparent 70%)",
+            "linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.05) 50%, transparent 70%)"
           ]
         }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
@@ -46,7 +46,7 @@ export default function About() {
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              <p className="text-lg text-zinc-300 leading-relaxed">
+              <p className="text-lg text-gray-300 leading-relaxed">
                 {personalInfo.bio}
               </p>
               
@@ -56,7 +56,7 @@ export default function About() {
                   {personalInfo.skills.map((skill, index) => (
                     <motion.div
                       key={skill}
-                      className="flex items-center space-x-2 text-zinc-400"
+                      className="flex items-center space-x-2 text-gray-400"
                       initial={{ opacity: 0, x: -20 }}
                       animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
                       transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
@@ -75,13 +75,13 @@ export default function About() {
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              <div className="aspect-square bg-gradient-to-br from-zinc-700 to-zinc-800 rounded-2xl flex items-center justify-center relative overflow-hidden">
+              <div className="aspect-square bg-gradient-to-br from-gray-700 to-gray-800 rounded-2xl flex items-center justify-center relative overflow-hidden">
                 <motion.div
                   className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-transparent"
                   animate={{ rotate: 360 }}
                   transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
                 />
-                <div className="w-32 h-32 bg-gradient-to-br from-white to-zinc-400 rounded-full flex items-center justify-center text-4xl font-bold text-black">
+                <div className="w-32 h-32 bg-gradient-to-br from-white to-gray-400 rounded-full flex items-center justify-center text-4xl font-bold text-black">
                   {personalInfo.name.split(' ').map(n => n[0]).join('')}
                 </div>
               </div>

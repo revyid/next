@@ -6,6 +6,7 @@ export interface Project {
   liveUrl: string
   githubUrl: string
   featured: boolean
+  thumbnail?: string
 }
 
 export const projects: Project[] = [

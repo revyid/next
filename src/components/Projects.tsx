@@ -201,20 +201,13 @@ function ProjectCard({ project, index, isInView }: { project: Project; index: nu
           className="p-6"
           style={{ transform: 'translateZ(30px)' }}
         >
-          <motion.h3 
-            className="text-xl font-bold text-white mb-3"
-            animate={isHovered ? { 
-              backgroundImage: 'linear-gradient(135deg, #ffffff 0%, #71717a 100%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-            } : {
-              WebkitTextFillColor: 'white',
-            }}
-            transition={{ duration: 0.3 }}
-          >
+          <h3 className={`text-xl font-bold mb-3 transition-all duration-300 ${
+            isHovered 
+              ? 'bg-gradient-to-r from-white to-gray-500 bg-clip-text text-transparent' 
+              : 'text-white'
+          }`}>
             {project.title}
-          </motion.h3>
+          </h3>
           <p className="text-gray-400 text-sm mb-4 line-clamp-2 leading-relaxed">
             {project.description}
           </p>

@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.projects = void 0;
+exports.projects = [
+    {
+        id: "1",
+        title: "IP Geolocation Tracker",
+        description: "Discover geographic location of any IP address with real-time data visualization, interactive maps, and detailed network information.",
+        technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+        liveUrl: "https://ipgeo.revy.my.id",
+        thumbnail: "http://10.130.157.188:3000/thum/ipgeo.png",
+        githubUrl: "https://github.com/alexjohnson/ecommerce-platform",
+        featured: true
+    }
+];

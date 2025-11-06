@@ -7,6 +7,16 @@ import { FiExternalLink, FiGithub } from 'react-icons/fi'
 import { projects } from '@/data/projects'
 import Image from 'next/image'
 
+interface Project {
+  id: string
+  title: string
+  description: string
+  thumbnail?: string
+  liveUrl: string
+  githubUrl: string
+  technologies: string[]
+}
+
 export default function Projects() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
@@ -40,7 +50,7 @@ export default function Projects() {
   )
 }
 
-function ProjectCard({ project, index, isInView }: { project: any; index: number; isInView: boolean }) {
+function ProjectCard({ project, index, isInView }: { project: Project; index: number; isInView: boolean }) {
   const cardRef = useRef<HTMLDivElement>(null)
   const [isHovered, setIsHovered] = useState(false)
   
